@@ -3,7 +3,7 @@ A Maven repository for public projects maintained or supported by [Alessandro](h
 Repository params:
 
 	<repository>
-		<id>Alessnadro on Github</id>
+		<id>Alessandro on Github</id>
 		<url>https://github.com/alessandroleite/maven-repository/raw/master</url>
 	</repository>
 
