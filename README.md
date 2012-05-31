@@ -1,4 +1,20 @@
-maven-repository
-================
+A Maven repository for public projects maintained or supported by [Alessandro](https://github.com/alessandroleite).
 
-A public maven repository for various projects
+Repository params:
+
+	<repository>
+		<id>Alessnadro on Github</id>
+		<url>https://github.com/alessandroleite/maven-repository/raw/master</url>
+	</repository>
+
+
+Avaliable artifacts:
+
+*	**[Coderwall Java Client](https://github.com/alessandroleite/coderwall-java)**   
+	  [Coderwall](http://coderwall.com/api) Java Client. 
+
+	License: [MIT](http://www.opensource.org/licenses/MIT)
+
+		<groupId>cc.alessandro</groupId>
+		<artifactId>coderwall-console</artifactId>
+		<version>1.0-SNAPSHOT</version>
