@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>cloudreports-maven-plugin</name>
+      <prefix>cloudreports</prefix>
+      <artifactId>cloudreports-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
