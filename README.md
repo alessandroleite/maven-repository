@@ -1,20 +1,54 @@
-A Maven repository for public projects maintained or supported by [Alessandro](https://github.com/alessandroleite).
+Maven repository
+================
 
-Repository params:
+Configuration
+-------------
 
-	<repository>
-		<id>Alessandro on Github</id>
-		<url>https://github.com/alessandroleite/maven-repository/raw/master</url>
-	</repository>
+To add this repository to your Maven project, add the following lines to your `pom.xml` or `settings.xml` file.
 
+### Dependency repository
 
-Avaliable artifacts:
+	<repositories>
+		<repository>
+			<id>cloudreports-snapshot-repo</id>
+			<url>https://github.com/alessandroleite/maven-repository/raw/master/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 
-*	**[Coderwall Java Client](https://github.com/alessandroleite/coderwall-java)**   
-	  [Coderwall](http://coderwall.com/api) Java Client. 
+		<repository>
+			<id>cloudreports-repo</id>
+			<url>https://github.com/alessandroleite/maven-repository/raw/master/releases</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+### Plugin repository
 
-	License: [MIT](http://www.opensource.org/licenses/MIT)
+	<pluginRepositories>
+		<pluginRepository>
+			<id>cloudreports-snapshots</id>
+			<name>CloudReports Maven Plugin Repository</name>
+			<url>https://github.com/alessandroleite/maven-repository/raw/master/snapshots</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
 
-		<groupId>cc.alessandro</groupId>
-		<artifactId>coderwall-console</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<pluginRepository>
+			<id>cloudreports-releases</id>
+			<name>CloudReports Maven Plugin Repository</name>
+			<url>https://github.com/alessandroleite/maven-repository/raw/master/releases</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
