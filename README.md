@@ -75,7 +75,7 @@ Dependencies
 			<dependency>
 				<groupId>org.cloudbus</groupId>
 				<artifactId>cloudsim</artifactId>
-				<version>3.1</version>
+				<version>3.0</version>
 				<scope>compile</scope>
 			</dependency>
 			
