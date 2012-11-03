@@ -57,10 +57,10 @@ To add this repository to your Maven project, add the following lines to your `p
 Configuration
 -------------
 
-	*	**[CloudReports][cloudreports]
-	*   **[CloudReports Maven Plugin][cloudreports-maven-plugin]
-	*   **[CloudSim][cloudsim]
-	*   **[Flanagan's Java Scientific Library][flanagan]
+	*** [CloudReports][cloudreports]
+	*** [CloudReports Maven Plugin][cloudreports-maven-plugin]
+	*** [CloudSim][cloudsim]
+	*** [Flanagan's Java Scientific Library][flanagan]
 
 
 Dependencies
