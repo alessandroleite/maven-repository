@@ -4,7 +4,7 @@ Maven repository
 Configuration
 -------------
 
-To add this repository to your Maven project, add the following lines to your `pom.xml` or `settings.xml` file.
+To add this repository to your [Maven][maven] project, add the following lines to your `pom.xml` or `settings.xml` file.
 
 ### Dependency repository
 
@@ -63,7 +63,7 @@ Configuration
 * [Flanagan's Java Scientific Library](http://www.ee.ucl.ac.uk/~mflanaga/java/)
 
 
-Dependencies
+The following artifacts are available
 -------------
 
 			<dependency>
@@ -83,8 +83,25 @@ Dependencies
 			    <groupId>org.flanagan</groupId>
 			    <artifactId>flanagan</artifactId>
 			    <version>1.0</version>
-			</dependency>							
+			</dependency>
+
+Maven Plugins
+-------------
+		<plugin>
+			<groupId>cloudreports</groupId>
+			<artifactId>cloudreports-maven-plugin</artifactId>
+			<version>1.0.0-SNAPSHOT</version>		
+		</plugin>
 			
+Deploy
+-------------
+
+```
+mvn deploy:deploy-file
+-Durl=file:PATH_TO_LOCAL/maven-repository/releases -Dfile=YOUR_FILE -DgroupId=GROUP_ID -DartifactId=ARTIFACT_ID -Dversion=VERSION -Dpackaging=PACKAGING
+```			
+			
+[maven]:http://maven.apache.org/			
 [cloudreports]:https://github.com/thiagotts/CloudReports/
 [cloudreports-maven-plugin]:https://github.com/alessandroleite/cloudreports-maven-plugin
 [cloudsim]:http://www.cloudbus.org/cloudsim/
