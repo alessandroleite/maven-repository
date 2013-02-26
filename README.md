@@ -66,24 +66,12 @@ Configuration
 The following artifacts are available
 -------------
 
-			<dependency>
-				<groupId>cloudreports</groupId>
-				<artifactId>cloudreports</artifactId>
-				<version>1.1</version>				
-			</dependency>
-			
-			<dependency>
-				<groupId>org.cloudbus</groupId>
-				<artifactId>cloudsim</artifactId>
-				<version>3.0</version>
-				<scope>compile</scope>
-			</dependency>
-			
-			<dependency>
-			    <groupId>org.flanagan</groupId>
-			    <artifactId>flanagan</artifactId>
-			    <version>1.0</version>
-			</dependency>
+	<dependency>
+	     	<groupId>cloudreports</groupId>
+		<artifactId>cloudreports</artifactId>
+		<version>1.1</version>				
+	</dependency>					
+						
 
 Maven Plugins
 -------------
