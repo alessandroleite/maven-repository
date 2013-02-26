@@ -67,7 +67,7 @@ The following artifacts are available
 -------------
 
 	<dependency>
-	     	<groupId>cloudreports</groupId>
+		<groupId>cloudreports</groupId>
 		<artifactId>cloudreports</artifactId>
 		<version>1.1</version>				
 	</dependency>					
