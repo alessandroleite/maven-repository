@@ -70,7 +70,13 @@ The following artifacts are available
 		<groupId>cloudreports</groupId>
 		<artifactId>cloudreports</artifactId>
 		<version>1.1</version>				
-	</dependency>					
+	</dependency>
+
+	<dependency>
+		<groupId>lshw</groupId>
+		<artifactId>xml-parser</artifactId>
+		<version>0.2</version>	
+	</dependency>
 						
 
 Maven Plugins
@@ -87,7 +93,7 @@ Deploy
 ```
 mvn deploy:deploy-file
 -Durl=file:PATH_TO_LOCAL/maven-repository/releases -Dfile=YOUR_FILE -DgroupId=GROUP_ID -DartifactId=ARTIFACT_ID -Dversion=VERSION -Dpackaging=PACKAGING
-```			
+```
 			
 [maven]:http://maven.apache.org/			
 [cloudreports]:https://github.com/thiagotts/CloudReports/
