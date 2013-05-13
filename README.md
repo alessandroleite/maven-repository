@@ -75,13 +75,13 @@ The following artifacts are available
 	<dependency>
 		<groupId>lshw</groupId>
 		<artifactId>xml-parser</artifactId>
-		<version>0.3</version>	
+		<version>0.5</version>	
 	</dependency>
 
 	<dependency>
-		<groupId>cc.alessandro</groupId>
+		<groupId>jdiffbot</groupId>
 		<artifactId>jdiffbot</artifactId>
-		<version>1.0</version>	
+		<version>1.1-SNAPSHOT</version>	
 	</dependency>
 						
 
