@@ -3,12 +3,13 @@
   <groupId>lshw</groupId>
   <artifactId>xml-parser</artifactId>
   <versioning>
-    <release>0.4</release>
+    <release>1.0.0</release>
     <versions>
       <version>0.2</version>
       <version>0.3</version>
       <version>0.4</version>
+      <version>1.0.0</version>
     </versions>
-    <lastUpdated>20130315093840</lastUpdated>
+    <lastUpdated>20130612103812</lastUpdated>
   </versioning>
 </metadata>
