@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>jivesoftware</groupId>
+  <artifactId>smackx</artifactId>
+  <versioning>
+    <versions>
+      <version>3.4.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20140207103708</lastUpdated>
+  </versioning>
+</metadata>
