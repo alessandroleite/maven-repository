@@ -1,0 +1,151 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+	<groupId>com.jgoodies</groupId>
+	<artifactId>jgoodies-common</artifactId>
+	<version>1.9.0</version>
+	<packaging>jar</packaging>
+	<name>JGoodies Common</name>
+
+	<url>http://www.jgoodies.com/downloads/libraries.html</url>
+	<description>The JGoodies Common library provides convenience code
+	for other JGoodies libraries and applications.</description>
+
+	<licenses>
+		<license>
+			<name>The BSD License</name>
+			<url>http://www.opensource.org/licenses/bsd-license.html</url>
+		</license>
+	</licenses>
+
+	<dependencies>
+	    <dependency>
+	    	<groupId>junit</groupId>
+	    	<artifactId>junit</artifactId>
+	    	<version>4.8</version>
+	    	<scope>test</scope>
+	    </dependency>
+	</dependencies>
+
+	<organization>
+		<name>JGoodies Software GmbH</name>
+		<url>http://www.jgoodies.com/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>karsten</id>
+			<name>Karsten Lentzsch</name>
+			<organization>JGoodies Software GmbH</organization>
+			<organizationUrl>http://www.jgoodies.com/</organizationUrl>
+			<timezone>+0100</timezone>
+			<roles>
+			    <role>Project owner</role>
+			    <role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+    <contributors>
+        <contributor>
+            <name>Markus Karg</name>
+            <email>markus@headcrashing.eu</email>
+            <url>http://www.headcrashing.eu</url>
+            <organization>Head Crashing Informatics</organization>
+            <organizationUrl>http://www.headcrashing.eu</organizationUrl>
+            <roles>
+                <role>Maven Central deployer</role>
+            </roles>
+            <timezone>+0100</timezone>
+            <properties>
+                <picUrl>http://weblogs.java.net/images/people/markus_karg.jpg</picUrl>
+            </properties>
+        </contributor>
+    </contributors>
+
+    <distributionManagement>
+		<repository>
+			<id>deploy-release-repo</id>
+			<name>deploy-release-repo</name>
+			<url>${env.DEPLOY_URL}/releases</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>deploy-snapshot-repo</id>
+			<name>deploy-snapshot-repo</name>
+			<url>${env.DEPLOY_URL}/snapshots</url>
+		</snapshotRepository>
+    </distributionManagement>
+
+    <build>    	
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                 </configuration>
+             </plugin>
+             <plugin>
+             	<groupId>org.apache.maven.plugins</groupId>
+             	<artifactId>maven-jar-plugin</artifactId>
+             	<version>2.4</version>             	
+             	<configuration>
+             		<archive>
+             			<manifest>
+             				<addClasspath>true</addClasspath>
+             				<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+             				<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+             			</manifest>
+             		</archive>             		
+             	</configuration>
+             	<executions>
+             		<execution>
+             			<id>jar</id>
+             			<goals>
+             				<goal>jar</goal>
+             			</goals>
+             		</execution>
+             	</executions>             	
+             </plugin>
+             <plugin>             	
+             	<groupId>org.apache.maven.plugins</groupId>
+             	<artifactId>maven-source-plugin</artifactId>
+             	<version>2.2.1</version>
+             	<executions>
+             		<execution>
+             			<id>attach-sources</id>
+             			<phase>verify</phase>
+             			<goals>
+             				<goal>jar-no-fork</goal>
+             			</goals>
+             		</execution>
+             	</executions>
+             </plugin>
+             <plugin>             	
+             	<groupId>org.apache.maven.plugins</groupId>
+             	<artifactId>maven-javadoc-plugin</artifactId>
+             	<version>2.10.3</version>
+             	<executions>
+             		<execution>
+             			<id>attach-javadocs</id>             			
+             			<goals>
+             			    <goal>jar</goal>
+             			</goals>
+             			<configuration>
+             			    <additionalparam>-Xdoclint:none</additionalparam>
+             			</configuration>
+             		</execution>
+             	</executions>
+             </plugin>
+         </plugins>
+     </build>
+</project>
