@@ -10,7 +10,7 @@ To add this repository to your [Maven][maven] project, add the following lines t
 
 	<repositories>
 		<repository>
-			<id>cloudreports-snapshot-repo</id>
+			<id>al-snapshot-repository</id>
 			<url>https://github.com/alessandroleite/maven-repository/raw/master/snapshots</url>
 			<snapshots>
 				<enabled>true</enabled>
@@ -18,7 +18,7 @@ To add this repository to your [Maven][maven] project, add the following lines t
 		</repository>
 
 		<repository>
-			<id>cloudreports-repo</id>
+			<id>al-releases-repo</id>
 			<url>https://github.com/alessandroleite/maven-repository/raw/master/releases</url>
 			<snapshots>
 				<enabled>false</enabled>
@@ -30,8 +30,7 @@ To add this repository to your [Maven][maven] project, add the following lines t
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>cloudreports-snapshots</id>
-			<name>CloudReports Maven Plugin Repository</name>
+			<id>al-snapshots-plugins-repository</id>
 			<url>https://github.com/alessandroleite/maven-repository/raw/master/snapshots</url>
 			<layout>default</layout>
 			<snapshots>
@@ -40,8 +39,7 @@ To add this repository to your [Maven][maven] project, add the following lines t
 		</pluginRepository>
 
 		<pluginRepository>
-			<id>cloudreports-releases</id>
-			<name>CloudReports Maven Plugin Repository</name>
+			<id>al-releases-plugins-repository</id>
 			<url>https://github.com/alessandroleite/maven-repository/raw/master/releases</url>
 			<layout>default</layout>
 			<snapshots>

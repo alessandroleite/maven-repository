@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lexaden</groupId>
+    <artifactId>components</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <name>Lexaden Components</name>
+
+    <repositories>
+    <repository>
+        <id>al-snapshots-repository</id>
+        <url>https://github.com/alessandroleite/maven-repository/raw/master/snapshots</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+
+    <repository>
+        <id>al-releases-repository</id>
+        <url>https://github.com/alessandroleite/maven-repository/raw/master/releases</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-source-plugin</artifactId>
+                   <version>2.2.1</version>
+                   <executions>
+                       <execution>
+                           <id>attach-sources</id>
+                           <phase>verify</phase>
+                           <goals>
+                               <goal>jar-no-fork</goal>
+                           </goals>
+                       </execution>
+                   </executions>
+               </plugin>               
+               <plugin>             	
+             	<groupId>org.apache.maven.plugins</groupId>
+             	<artifactId>maven-javadoc-plugin</artifactId>
+             	<version>2.10.3</version>
+             	<executions>
+             		<execution>
+             			<id>attach-javadocs</id>             			
+             			<goals>
+             			    <goal>jar</goal>
+             			</goals>
+             			<configuration>
+             			    <additionalparam>-Xdoclint:none</additionalparam>
+             			</configuration>
+             		</execution>
+             	</executions>
+             </plugin>
+        </plugins>
+        <extensions>
+            <!-- Enabling the use of FTP -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh-external</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>lexaden</id>
+            <name>Lexaden Repository</name>
+            <!--<url>scpexe://lexaden.com/var/www/maven2/repo</url>-->
+            <url>${env.DEPLOY_URL}/releases</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>lexadenSnap</id>
+            <name>Lexaden Snapshots</name>
+            <!--<url>scpexe://lexaden.com/var/www/maven2/snapshots</url> -->
+            <url>${env.DEPLOY_URL}/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
