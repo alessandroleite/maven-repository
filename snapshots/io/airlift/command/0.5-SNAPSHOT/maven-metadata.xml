@@ -5,38 +5,38 @@
   <version>0.5-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20171102.172353</timestamp>
-      <buildNumber>5</buildNumber>
+      <timestamp>20171114.162921</timestamp>
+      <buildNumber>6</buildNumber>
     </snapshot>
-    <lastUpdated>20171102172353</lastUpdated>
+    <lastUpdated>20171114162921</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.5-20171102.172353-5</value>
-        <updated>20171102172353</updated>
+        <value>0.5-20171114.162921-6</value>
+        <updated>20171114162921</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.5-20171102.172353-5</value>
-        <updated>20171102172353</updated>
+        <value>0.5-20171114.162921-6</value>
+        <updated>20171114162921</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>tests</classifier>
         <extension>jar</extension>
-        <value>0.5-20171102.172353-5</value>
-        <updated>20171102172353</updated>
+        <value>0.5-20171114.162921-6</value>
+        <updated>20171114162921</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>0.5-20171102.172353-5</value>
-        <updated>20171102172353</updated>
+        <value>0.5-20171114.162921-6</value>
+        <updated>20171114162921</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>test-sources</classifier>
         <extension>jar</extension>
-        <value>0.5-20171102.172353-5</value>
-        <updated>20171102172353</updated>
+        <value>0.5-20171114.162921-6</value>
+        <updated>20171114162921</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
