@@ -35,7 +35,7 @@
 
 		<sigar.version>1.6.4</sigar.version>
 		<mirror.version>1.6.1</mirror.version>
-		<slf4j-log4j12.version>1.7.25</slf4j-log4j12.version> 
+		<slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
 		<deploy-repo.url>file:///${env.DEFAULT_MAVEN_REPO_URL}</deploy-repo.url>
 
 	</properties>
@@ -57,7 +57,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>deploy-release-repo</id>
@@ -111,12 +111,9 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
-		
-		<!-- <dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>${slf4j-log4j12.version}</version>
-		</dependency> -->
+
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+			<version>${slf4j-log4j12.version}</version> </dependency> -->
 
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -145,4 +142,17 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.gaul</groupId>
+				<artifactId>modernizer-maven-plugin</artifactId>
+				<configuration>
+					<javaVersion>1.8</javaVersion>
+					<failOnViolations>false</failOnViolations>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
